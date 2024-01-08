@@ -1,0 +1,43 @@
+ALGORITHM  tache_one
+VAR
+phrase:STRING[50];
+compteurMots, compteurVoyelles, longueurPhrase, i:INTEGER;
+
+BEGIN
+// Initialisation des compteurs
+compteurMots:=1;
+compteurVoyelles:=0;
+// Lecture de la phrase
+write ("Entrez une phrase terminez par un point '.' : ")
+    read(phras)
+// Vérification si la phrase se termine par un point
+REPEAT
+    read(phrase)
+UNTIL (last STRING<>.)
+    write("Entrez une phrase terminez par un point '.' : ")
+END_REPEAT
+// Calcul de la longueur de la phrase
+longueurPhrase:=phrase;
+// Parcours caractère par caractère
+Pour i de 0 à longueurPhrase - 1 Faire
+FOR i FROM 1 TO max . step  DO
+    compteurMots:=compteurMots + 1
+END_FOR
+IF (phrase[i]='a') THEN
+    compteurVoyelles:=compteurVoyelles + 1;
+    ELSE_IF(phrase[i]='e') THEN
+    compteurVoyelles:=compteurVoyelles + 1;
+    ELSE_IF(phrase[i]='i') THEN
+    compteurVoyelles:=compteurVoyelles + 1;
+    ELSE_IF(phrase[i]='o') THEN
+    compteurVoyelles:=compteurVoyelles + 1;
+    ELSE_IF(phrase[i]='u') THEN
+    compteurVoyelles:=compteurVoyelles + 1;
+    ELSE_IF(phrase[i]='y') THEN
+    compteurVoyelles:=compteurVoyelles + 1;
+END_IF
+ // Affichage des résultats
+    write ("Nombre de mots dans la phrase : "), compteurMots
+    write ("Nombre de voyelles dans la phrase : "), compteurVoyelles
+
+END

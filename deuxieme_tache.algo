@@ -1,0 +1,25 @@
+ALGORITHM  tache_two
+VAR
+tab:ensemble1 INTEGER[4];
+tab:ensemble1 INTEGER[5];
+somme:INTEGER,i;
+
+BEGIN
+// Initialisation de la somme
+somme:=0;
+// Parcourir chaque élément de l'ensemble 1
+FOR i FROM 0 TO 3 STEP step  DO
+    IF (ensemble1<>ensemble2) THEN
+        somme:=somme + ensemble1
+    END_IF
+END_FOR
+
+// Parcourir chaque élément de l'ensemble 2
+FOR i FROM 0 TO 4 STEP step  DO
+    IF (ensemble2<>ensemble1) THEN
+        somme:=somme + ensemble2
+    END_IF
+END_FOR
+// Affichage de la somme des éléments distincts
+ write ("La somme des éléments distincts est : "), somme
+END
